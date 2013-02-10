@@ -58,22 +58,7 @@ void silenceData(AudioBufferList *inData)
     status = AudioSessionInitialize(NULL, NULL, NULL, (__bridge void*) self);
     checkStatus(status);
     
-    //Make description of Remote IO Audio Unit (this gives us access to the microphone and speaker!)
-    /*AudioComponentDescription desc;
-    desc.componentType = kAudioUnitType_Output;
-    desc.componentSubType = kAudioUnitSubType_RemoteIO;
-    desc.componentFlags = 0;
-    desc.componentFlagsMask = 0;
-    desc.componentManufacturer = kAudioUnitManufacturer_Apple;
-    */
-    //Get the remote IO identifier using the aforementioned description
-    //AudioComponent inputComponent = AudioComponentFindNext(NULL, &desc);
-    
-    //Now create an instance of the remoteIO unit and obtain a reference
-    //status = AudioComponentInstanceNew(inputComponent, &ioUnit);
-    //checkStatus(status);
-    
-    //Setup the remoteio unit
+    //Setup the Remote I/O unit for recording (not in the AUGraph).
     //Enable IO for recording
     UInt32 flag = 1;
     status = AudioUnitSetProperty(ioUnit,
@@ -96,7 +81,6 @@ void silenceData(AudioBufferList *inData)
     
     //Apply format to both the input and output channels
     //Input (scope is set to output because we want to change the format as the audio signal comes OUT of the microphone and into our callback function)
-    
     status = AudioUnitSetProperty(ioUnit,
                                   kAudioUnitProperty_StreamFormat, 
                                   kAudioUnitScope_Output, 
@@ -104,6 +88,7 @@ void silenceData(AudioBufferList *inData)
                                   &audioFormat, 
                                   sizeof(audioFormat));
     checkStatus(status);
+    
     //Output (the scope is set to input because we want to change the format as the audio signal leaves our callback and goes INTO the speaker)
     status = AudioUnitSetProperty(ioUnit,
                                   kAudioUnitProperty_StreamFormat, 
@@ -184,6 +169,7 @@ void silenceData(AudioBufferList *inData)
     [self setMixerInput: 0 gain: 0.5];
     [self setMixerInput: 1 gain: 0.5];
 
+    //Load a SF2 patch (in this case a piano SF2 I found after a google search for "Free unlicensed SF2")
     [self loadFromDLSOrSoundFontName:@"Claudio_Piano" withPatch:0];
     
     return self;
@@ -191,7 +177,6 @@ void silenceData(AudioBufferList *inData)
 
 
 - (BOOL) createAUGraph {
-    
 	OSStatus result = noErr;
     
     //Create a new AUGraph
