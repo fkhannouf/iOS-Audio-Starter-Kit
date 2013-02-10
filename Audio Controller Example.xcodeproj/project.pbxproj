@@ -13,12 +13,11 @@
 		10B319B416C65809009B43E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10B319B216C65809009B43E1 /* InfoPlist.strings */; };
 		10B319B616C65809009B43E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B319B516C65809009B43E1 /* main.m */; };
 		10B319BA16C65809009B43E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B319B916C65809009B43E1 /* AppDelegate.m */; };
-		10B319BC16C65809009B43E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B319BB16C65809009B43E1 /* Default.png */; };
-		10B319BE16C65809009B43E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B319BD16C65809009B43E1 /* Default@2x.png */; };
-		10B319C016C65809009B43E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B319BF16C65809009B43E1 /* Default-568h@2x.png */; };
 		10B319C316C65809009B43E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B319C216C65809009B43E1 /* ViewController.m */; };
-		10B319C616C65809009B43E1 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B319C416C65809009B43E1 /* ViewController_iPhone.xib */; };
-		10B319C916C65809009B43E1 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B319C716C65809009B43E1 /* ViewController_iPad.xib */; };
+		10B319D416C65877009B43E1 /* AudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10B319D316C65877009B43E1 /* AudioController.mm */; };
+		10B319D616C658A6009B43E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B319D516C658A6009B43E1 /* AudioToolbox.framework */; };
+		10B319D816C72E05009B43E1 /* Claudio_Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 10B319D716C72E05009B43E1 /* Claudio_Piano.sf2 */; };
+		10B319DB16C76FEC009B43E1 /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B319DA16C76FEC009B43E1 /* MeterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +31,14 @@
 		10B319B716C65809009B43E1 /* Audio Controller Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audio Controller Example-Prefix.pch"; sourceTree = "<group>"; };
 		10B319B816C65809009B43E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10B319B916C65809009B43E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		10B319BB16C65809009B43E1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		10B319BD16C65809009B43E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		10B319BF16C65809009B43E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		10B319C116C65809009B43E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		10B319C216C65809009B43E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		10B319C516C65809009B43E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		10B319C816C65809009B43E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		10B319D216C65877009B43E1 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		10B319D316C65877009B43E1 /* AudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioController.mm; sourceTree = "<group>"; };
+		10B319D516C658A6009B43E1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		10B319D716C72E05009B43E1 /* Claudio_Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Claudio_Piano.sf2; sourceTree = "<group>"; };
+		10B319D916C76FEB009B43E1 /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = "<group>"; };
+		10B319DA16C76FEC009B43E1 /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B319D616C658A6009B43E1 /* AudioToolbox.framework in Frameworks */,
 				10B319AA16C65808009B43E1 /* UIKit.framework in Frameworks */,
 				10B319AC16C65808009B43E1 /* Foundation.framework in Frameworks */,
 				10B319AE16C65808009B43E1 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +76,7 @@
 		10B319A816C65808009B43E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10B319D516C658A6009B43E1 /* AudioToolbox.framework */,
 				10B319A916C65808009B43E1 /* UIKit.framework */,
 				10B319AB16C65808009B43E1 /* Foundation.framework */,
 				10B319AD16C65808009B43E1 /* CoreGraphics.framework */,
@@ -85,12 +87,15 @@
 		10B319AF16C65808009B43E1 /* Audio Controller Example */ = {
 			isa = PBXGroup;
 			children = (
+				10B319D716C72E05009B43E1 /* Claudio_Piano.sf2 */,
+				10B319D216C65877009B43E1 /* AudioController.h */,
+				10B319D316C65877009B43E1 /* AudioController.mm */,
 				10B319B816C65809009B43E1 /* AppDelegate.h */,
 				10B319B916C65809009B43E1 /* AppDelegate.m */,
 				10B319C116C65809009B43E1 /* ViewController.h */,
 				10B319C216C65809009B43E1 /* ViewController.m */,
-				10B319C416C65809009B43E1 /* ViewController_iPhone.xib */,
-				10B319C716C65809009B43E1 /* ViewController_iPad.xib */,
+				10B319D916C76FEB009B43E1 /* MeterView.h */,
+				10B319DA16C76FEC009B43E1 /* MeterView.m */,
 				10B319B016C65809009B43E1 /* Supporting Files */,
 			);
 			path = "Audio Controller Example";
@@ -103,9 +108,6 @@
 				10B319B216C65809009B43E1 /* InfoPlist.strings */,
 				10B319B516C65809009B43E1 /* main.m */,
 				10B319B716C65809009B43E1 /* Audio Controller Example-Prefix.pch */,
-				10B319BB16C65809009B43E1 /* Default.png */,
-				10B319BD16C65809009B43E1 /* Default@2x.png */,
-				10B319BF16C65809009B43E1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,11 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10B319B416C65809009B43E1 /* InfoPlist.strings in Resources */,
-				10B319BC16C65809009B43E1 /* Default.png in Resources */,
-				10B319BE16C65809009B43E1 /* Default@2x.png in Resources */,
-				10B319C016C65809009B43E1 /* Default-568h@2x.png in Resources */,
-				10B319C616C65809009B43E1 /* ViewController_iPhone.xib in Resources */,
-				10B319C916C65809009B43E1 /* ViewController_iPad.xib in Resources */,
+				10B319D816C72E05009B43E1 /* Claudio_Piano.sf2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +178,8 @@
 				10B319B616C65809009B43E1 /* main.m in Sources */,
 				10B319BA16C65809009B43E1 /* AppDelegate.m in Sources */,
 				10B319C316C65809009B43E1 /* ViewController.m in Sources */,
+				10B319D416C65877009B43E1 /* AudioController.mm in Sources */,
+				10B319DB16C76FEC009B43E1 /* MeterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,22 +192,6 @@
 				10B319B316C65809009B43E1 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		10B319C416C65809009B43E1 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10B319C516C65809009B43E1 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		10B319C716C65809009B43E1 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10B319C816C65809009B43E1 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +296,7 @@
 				10B319CE16C65809009B43E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

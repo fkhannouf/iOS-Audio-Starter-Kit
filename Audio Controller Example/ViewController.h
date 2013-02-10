@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AudioController.h"
+#import "MeterView.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <AudioManagerDelegate>
+{
+    float outputFrequency, outputAmplitude;
+    UISegmentedControl *waveControl;
+    MeterView *audioMeter;
+}
 @end
